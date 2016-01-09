@@ -42,7 +42,8 @@ class QiitaExporter
       meta[:id] => {
         'title' => meta[:title],
         'tags' => meta[:tags].map{|i| i["name"]},
-        'user' => meta[:user]
+        'user' => meta[:user],
+        'created_at' => meta[:created_at]
       }
     }
     
@@ -66,13 +67,15 @@ class QiitaExporter
     tags = article['tags']
     user = article['user']['id']
     user_image = article['user']['profile_image_url']
+    created_at = article['created_at']
     {
      id: id,
      title: title,
      body: body,
      user: user, 
      user_image: user_image,
-     tags: tags
+     tags: tags,
+     created_at: created_at,
     }
   end
 
