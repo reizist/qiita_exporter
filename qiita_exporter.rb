@@ -5,8 +5,8 @@ require 'yaml'
 
 ACCESS_TOKEN = ENV['QIITA_ACCESS_TOKEN']
 TEAM_DOMAIN = ENV['QIITA_TEAM_DOMAIN']
-ARTICLE_DIR = 'posts/'
-META_DIR = 'meta/'
+ARTICLE_DIR = 'data/posts/'
+META_DIR = 'data/meta/'
 EXT = '.md'
 META_EXT = '.yml'
 
