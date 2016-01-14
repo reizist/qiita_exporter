@@ -1,2 +1,4 @@
 data/
 .envrc
+vendor/bundle
+.bundle

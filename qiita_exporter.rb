@@ -1,5 +1,4 @@
 require 'qiita'
-require 'pry'
 require 'fileutils'
 require 'yaml'
 
